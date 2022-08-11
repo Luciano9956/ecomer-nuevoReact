@@ -12,7 +12,7 @@ const NavBar = () => {
     { name: "women's clothing", id: 3, route: "/category/women's clothing" },
   ];
   return (
-    <header className='flex justify-between items-center relative h-16 bg-amber-400'>
+    <header className='flex justify-between items-center relative h-16 bg-gradient-to-tl from-cyan-500 to-blue-500'>
     <div  >
       <Link to='/'><FcShop className='flex w-12 h-12 pl-2'/></Link>
     </div>

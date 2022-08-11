@@ -1,5 +1,9 @@
 import React from "react";
-import { FcShop } from "react-icons/fc";
+import { GoMarkGithub } from "react-icons/go";
+import { BsLinkedin} from "react-icons/bs";
+import { FcUnlock } from "react-icons/fc";
+import { FcInTransit } from "react-icons/fc";
+import { FcCurrencyExchange } from "react-icons/fc";
 
 
 
@@ -7,80 +11,35 @@ import { FcShop } from "react-icons/fc";
 const Footer = () => {
 
     return (
-        <footer className="z-depth-5" style={styles.footer}>
-          <section  style={styles.sec1}>
-           <div style={styles.sec1Div}>
-            <FcShop/>
+        <footer className="flex flex-col bg-gradient-to-r from-cyan-500 via to-blue-500">
+          <section  className="flex flex-row justify-between flex-wrap gap-2">
+           <div className="flex justify-center p-12">
+            <FcCurrencyExchange className="text-2xl"/>
            <p>Elegi como pagar</p>
            </div> 
-           <div style={styles.sec1Div}>
-            <FcShop />
+           <div className="flex justify-center p-12">
+            <FcInTransit className="text-2xl" />
             <p>Envios a todo el pais</p>
            </div>
-           <div style={styles.sec1Div}>
-            <FcShop />
+           <div className="flex justify-center p-12">
+            <FcUnlock className="text-2xl" />
             <p> Tus datos protegidos</p>
            </div>
            </section>
-           <section style={styles.sec2}>
-           <div >
+           <section className="flex flex-wrap justify-center items-center">
+           <div>
            <a target="_blank" href="https://www.linkedin.com">
-            <FcShop style={styles.link} />
+            <BsLinkedin className="text-5xl  " />
            </a>
            <a target="_blank" href="https://github.com"> 
-            <FcShop style={styles.link} />
+            <GoMarkGithub className="text-5xl  " />
             </a>
             </div>
-            <h4 style={styles.h4} >Desarrollado por </h4>
             </section>
+            <h4 className="flex flex-row justify-center items-center text-xl" >Desarrollado por Luciano Morales </h4>
         </footer>
     )
 
 }
 
 export default Footer;
-
-const styles = {
-footer:{
-    backgroundColor: '#ffebee',
-    display: 'flex',
-    flexDirection: 'column',
-    
-},
-
-sec1:{
-    display: 'flex',
-    flexDirection:'row',
-    justifyContent: 'space-between',
-    flexWrap: 'wrap',
-    gap: '5%',
-},
-
-sec1Div:{
-    display: 'flex',
-    justifyContent:"center",
-    padding: '3%',
-},
-
-sec2:{
-    display: 'flex',
-    flexDirection: 'column',
-    paddingLeft: '45%',
-    paddingRight: '45%',
-    justifyContent:"center",
-},
-
-h4:{
-    fontSize: '100%',
-    textAling: 'center',
-    justifyContent:"center",
-},
-
-link:{
-    textDecoration: 'none',
-    color: 'black',
-    fontSize: '300%',
-    paddingTop: '5%',
-}
-,
-}
