@@ -8,8 +8,8 @@ const CartWidget =  () => {
 
     return (
         <>
-        <FaShoppingCart className="text-white" size={35}/> 
-         { qtyCompra >= 1 ? <span className="absolute top-4 right-10 font-bold" >{qtyCompra}</span> : null }
+        <FaShoppingCart className="text-neutral-300" size={35}/> 
+         { qtyCompra >= 1 ? <span className="absolute top-16 right-10 font-black text-red-500 " >{qtyCompra}</span> : null }
          </>
     )
 

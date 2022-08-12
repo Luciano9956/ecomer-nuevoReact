@@ -27,7 +27,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     return (
         <>
 
-            <p className='font-bold p-9'>{contador}</p>
+            <p className='font-bold text-xl p-9 mb-4'>{contador}</p>
             <a className="bg-indigo-600 p-5 text-white cursor-pointer" onClick={restar}>-</a>
             <a className="bg-indigo-600 p-5 text-white cursor-pointer" onClick={sumar}>+</a>
 

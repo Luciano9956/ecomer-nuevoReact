@@ -34,15 +34,17 @@ const ItemListContainer = (prop) => {
 
 
   return (
-    <section style={styles.cont}>
+    <section className=" bg-slate-100 flex flex-col">
+      <img className='h-60' src={require('../Componentes/image/banner1.png')} alt="logo" />
       <div>
-        <h2 className="z-depth-2" style={styles.subTitulo}>
+        <h2 className="" style={styles.subTitulo}>
           En {name} vas a encontrar todo lo que buscas
         </h2>
+
       </div>
-      <div style={styles.items}>
+      <div className="flex flex-row flex-wrap justify-between gap-5">
         {loading ?
-          <div style={styles.load} className="preloader-wrapper active">
+          <div  className="block m-auto">
             <div className="spinner-layer spinner-red-only">
               <div className="circle-clipper left">
                 <div className="circle"></div>
@@ -80,13 +82,6 @@ const styles = {
     flexDirection: 'column',
   },
 
-  items: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    flexWrap: 'wrap',
-    gap: '5%',
-  },
 
   subTitulo: {
     textAlign: 'center',

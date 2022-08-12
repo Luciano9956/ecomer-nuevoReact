@@ -19,8 +19,8 @@ const ItemDetail = ({ item }) => {
          <div className="pt-6">
         
            <div className="mt-6 max-w-2xl mx-auto ">
-             <div className="">
-               <img className="w-full h-full object-center "
+             <div className="flex justify-center">
+               <img className="h-52 w-52  "
                  src={item.image}
                  alt={item.image}
                />
@@ -34,7 +34,7 @@ const ItemDetail = ({ item }) => {
    
         
              <div className="mt-4 lg:mt-0 lg:row-span-3">
-               <h2 className="">Precio</h2>
+               <h2 className="underline font-bold mb-3">Precio</h2>
                <p className="text-3xl font-bold text-gray-900">${item.price}</p>
    
                <form className="mt-10">
@@ -52,7 +52,7 @@ const ItemDetail = ({ item }) => {
              <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
    
                <div>
-                 <h3 className="">Descripcion</h3>
+                 <h3 className="underline font-bold mb-3 ">Descripcion</h3>
    
                  <div className="space-y-6">
                    <p className="text-base text-gray-900">{item.description}</p>

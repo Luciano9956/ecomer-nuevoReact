@@ -17,7 +17,7 @@ const Cart = () => {
             </div>
                 : <div className="p-11 gap-2" >
                      <h1 className="text-2xl text-center pb-8"> Detalle de su carrito  </h1> {productosCarrito.map(item =>
-                    <div className="grid border-8 rounded border-double border-yellow-500" key={item.id}>
+                    <div className="grid border-2 shadow-xl mb-2 rounded ring-slate-100" key={item.id}>
                         <div className="grid grid-cols-5 gap-4">
                         <img className="flex scale-50 "  src={item.image} alt="" />                      
                          <p className="text-3xl text-center pt-10" id={item.id}> {item.title}  </p>

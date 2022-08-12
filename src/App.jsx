@@ -14,8 +14,8 @@ const App = () => {
     <CartContext key={CartContext.id} > 
     <NavBar key={NavBar.id} />
     <Routes key={Routes.id} >
-    <Route path="/" element={<ItemListContainer key={ItemListContainer.id} name = 'Nombre' />}/>
-    <Route path="/category/:categoriaSelec" element={<ItemListContainer name ="Nombre 222"  />}/>
+    <Route path="/" element={<ItemListContainer key={ItemListContainer.id} name = 'Arcade Hard' />}/>
+    <Route path="/category/:categoriaSelec" element={<ItemListContainer name ="Arcade Hard"  />}/>
     <Route path="/item/:Id" element={<ItemDetailContainer />}/>
     <Route path="/cart" element={<Cart  />}/>
     <Route path="/form" element={<Form />} />  

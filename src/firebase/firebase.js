@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDHtKlozuFOy-TPCCVm0Z3NvcOGvxl6lPw",
-  authDomain: "proyectoreact-4b322.firebaseapp.com",
-  projectId: "proyectoreact-4b322",
-  storageBucket: "proyectoreact-4b322.appspot.com",
-  messagingSenderId: "649355691283",
-  appId: "1:649355691283:web:5bac57334df1594063c6e6"
+  apiKey: "AIzaSyDeZpwVe-7hOjFA3_LzHEt00SA3nX_6zS4",
+  authDomain: "tienda-arcadehard.firebaseapp.com",
+  projectId: "tienda-arcadehard",
+  storageBucket: "tienda-arcadehard.appspot.com",
+  messagingSenderId: "535125363046",
+  appId: "1:535125363046:web:6d6597bbf54acd86c4e0a7",
 };
 
 const app = initializeApp(firebaseConfig);

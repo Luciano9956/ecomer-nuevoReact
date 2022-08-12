@@ -9,9 +9,11 @@ export const Form = () => {
     const [loading, setLoading] = useState(false)
     const [buyer, setBuyer] = useState({
         Nombre: '',
-        Email: ''
+        Email: '',
+        Telefono: '',
+        Direccion: '',
     })
-    const { Nombre, Email } = buyer
+    const { Nombre, Email, Telefono, Direccion } = buyer
 
     const Input = (e) => {
         setBuyer(({
@@ -58,19 +60,26 @@ export const Form = () => {
              </div>
            </div>
                 : (!idOrden && <div  className="flex flex-col justify-center w-full h-full items-center  ">
-                    <form className="border-8 m-8 p-32 rounded border-double border-yellow-500" onSubmit={enviar}>
+                    <form className=" m-8 p-32 rounded border-2 ring-slate-100 shadow-xl" onSubmit={enviar}>
                         <div>
                             <h2 className="text-2xl font-bold mb-6"> Carga tus datos</h2>
                         </div>
                         <div>
                             <p>
-                                <input className="border-2 mb-1 ring-indigo-500 border-indigo-500" type="text" name="Nombre" onChange={Input} value={Nombre} placeholder="Nombre" required />
+                                <input className="border-2 mb-1 bg-neutral-100 ring-slate-100 shadow-md" type="text" name="Nombre" onChange={Input} value={Nombre} placeholder="Nombre" required />
                             </p>
                             <p>
-                                <input className="border-2  ring-indigo-500 border-indigo-500" type="email" name="Email" onChange={Input} placeholder="Mail" value={Email} required />
+                                <input className="border-2 mb-1 bg-neutral-100 ring-slate-100 shadow-md" type="email" name="Email" onChange={Input} placeholder="Mail" value={Email} required />
                             </p>
                             <p>
-                                <button className="relative bg-indigo-600 p-1 text-white cursor-pointer mt-6 " >
+                                <input className="border-2 mb-1 bg-neutral-100 ring-slate-100 shadow-md" type="number" name="Telefono" onChange={Input} placeholder="Telefono" value={Telefono} required />
+                            </p>
+                        
+                            <p>
+                                <input className="border-2  bg-neutral-100 ring-slate-100 shadow-md" type="text" name="Direccion" onChange={Input} placeholder="Direccion" value={Direccion} required />
+                            </p>
+                            <p>
+                                <button className="flex justify-center bg-indigo-600 p-1 text-white cursor-pointer mt-6 " >
                                     Enviar
                                 </button>
                             </p>
