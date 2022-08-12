@@ -3,6 +3,7 @@ import Itemlist from "./ItemList";
 import { useParams } from 'react-router-dom';
 import { db } from '../firebase/firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore'
+import { CSpinner } from '@coreui/react'
 
 const ItemListContainer = (prop) => {
 
@@ -45,15 +46,7 @@ const ItemListContainer = (prop) => {
       <div className="flex flex-row flex-wrap justify-between gap-5">
         {loading ?
           <div  className="block m-auto">
-            <div className="spinner-layer spinner-red-only">
-              <div className="circle-clipper left">
-                <div className="circle"></div>
-              </div><div className="gap-patch">
-                <div className="circle"></div>
-              </div><div className="circle-clipper right">
-                <div className="circle"></div>
-              </div>
-            </div>
+            <CSpinner color="warning"/>
           </div>
           : <Itemlist key={Itemlist.id} productos={productos} />}
       </div>

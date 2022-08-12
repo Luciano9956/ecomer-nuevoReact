@@ -15,10 +15,6 @@ const Footer = () => {
     return (
         <footer className="flex flex-col bg-black">
           <section  className="flex flex-row justify-between flex-wrap gap-2">
-           {/* <div className="flex justify-center p-12">
-           </div> 
-           <div className="flex justify-center p-12">
-           </div> */}
             <div  >
            <Link to='/'><img className='h-32' src={require('../Componentes/image/logo.png')} alt="logo" /></Link>
            </div>

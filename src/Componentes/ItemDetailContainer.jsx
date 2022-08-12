@@ -3,6 +3,7 @@ import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
 import { db } from '../firebase/firebase';
 import { getDoc, collection, doc} from 'firebase/firestore';
+import { CSpinner } from '@coreui/react';
 
 
 const ItemDetailContainer = () => {
@@ -27,7 +28,7 @@ const ItemDetailContainer = () => {
 
     return(
         <>
-         {loading ? <p>cargando...</p> :<ItemDetail item={productos}></ItemDetail>}
+         {loading ? <p>cargando...<CSpinner/></p> :<ItemDetail item={productos}></ItemDetail>}
         
         
         </>

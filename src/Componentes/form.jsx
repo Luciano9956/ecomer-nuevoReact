@@ -3,6 +3,7 @@ import { context } from '../context/CartContext';
 import { db } from '../firebase/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { Link } from 'react-router-dom';
+
 export const Form = () => {
     const { productosCarrito, clear, totalCompra } = useContext(context)
     const [idOrden, setIdOrden] = useState()
