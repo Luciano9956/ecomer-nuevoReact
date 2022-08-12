@@ -37,8 +37,8 @@ const ItemListContainer = (prop) => {
     <section className=" bg-slate-100 flex flex-col">
       <img className='h-60' src={require('../Componentes/image/banner1.png')} alt="logo" />
       <div>
-        <h2 className="" style={styles.subTitulo}>
-          En {name} vas a encontrar todo lo que buscas
+        <h2 className="text-center font-semibold bg-red-600">
+          En {name} juga a lo grande
         </h2>
 
       </div>
@@ -71,23 +71,3 @@ export default ItemListContainer
 
 </> */}
 
-const styles = {
-
-  load: {
-    display: 'block',
-    margin: 'auto',
-  },
-  cont: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
-
-
-  subTitulo: {
-    textAlign: 'center',
-    fontFamily: 'Koulen',
-    backgroundColor: '#ec407a',
-    color: '#ffebee',
-  },
-
-}

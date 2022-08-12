@@ -1,7 +1,6 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import { Link, NavLink } from 'react-router-dom';
-import { FcShop } from "react-icons/fc";
 
 const NavBar = () => {
 
@@ -20,7 +19,7 @@ const NavBar = () => {
     </div>
   <nav>
 
-    {categorias.map((categoria) => <NavLink className={'pr-8 text-white font-bold hover:bg-slate-100'} key={categoria.id} to={categoria.route}>{categoria.name}</NavLink>)}
+    {categorias.map((categoria) => <NavLink className={'pr-8 text-white font-bold hover:bg-gray-800'} key={categoria.id} to={categoria.route}>{categoria.name}</NavLink>)}
 
 
   </nav>
