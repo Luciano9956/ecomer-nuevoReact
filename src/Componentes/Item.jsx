@@ -7,10 +7,10 @@ const Item = ({ producto }) => {
 
   return (
    
- <div className="flex-wrap w-1/3 my-8 ml-14 mr-14 justify-center p-4 bg-white shadow-xl rounded-3xl" >
+ <div className="flex-wrap  my-8 ml-14 mr-14 justify-center p-4 bg-white shadow-xl rounded-3xl" >
       <div className="flex justify-around flex-col">
       <div className="flex flex-col justify-center p-3 w-full h-2/4 ring-2 ring-slate-100 ">
-        <img className="h-52 w-52 block justify-center m-auto" src={producto.image} alt="" />
+        <img className="h-52 w-52 block justify-center m-auto" src={producto.image} alt="producto" />
       </div>
       <div>
         <h3 className="text-2xl">

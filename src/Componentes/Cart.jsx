@@ -11,9 +11,9 @@ const Cart = () => {
         <>
             {productosCarrito.length === 0 ? 
             <div className="text-center p-11 gap-2">
-                <FcCancel  className=" mx-auto text-8xl" />
-                <h3 className="text-2xl mb-5"> Aun no añadiste productos al Carrito </h3>
-                <Link className="  bg-indigo-600 p-1 text-white cursor-pointer" to="/">Ir a productos</Link>
+                <FcCancel  className=" mx-auto text-8xl " />
+                <h3 className="text-2xl mb-5 "> Aun no añadiste productos al Carrito </h3>
+                <Link className="bg-indigo-600 p-1 text-white cursor-pointer" to="/">Ir a productos</Link>
             </div>
                 : <div className="p-11 gap-2" >
                      <h1 className="text-2xl text-center pb-8"> Detalle de su carrito  </h1> {productosCarrito.map(item =>

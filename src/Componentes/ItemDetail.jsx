@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react";
 import ItemCount from './ItemCount';
 import { Link } from "react-router-dom";
 import { context } from '../context/CartContext';
-// import { FcShop } from "react-icons/fc";
 
 const ItemDetail = ({ item }) => {
 

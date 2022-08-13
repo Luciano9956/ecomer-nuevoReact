@@ -3,7 +3,8 @@ import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
 import { db } from '../firebase/firebase';
 import { getDoc, collection, doc} from 'firebase/firestore';
-import { CSpinner } from '@coreui/react';
+import GridLoader from "react-spinners/ClipLoader";
+
 
 
 const ItemDetailContainer = () => {
@@ -28,7 +29,10 @@ const ItemDetailContainer = () => {
 
     return(
         <>
-         {loading ? <p>cargando...<CSpinner/></p> :<ItemDetail item={productos}></ItemDetail>}
+
+         {loading ? 
+         <GridLoader className="mx-auto" color={ '#D0021B' } loading={loading} size={150} />
+           :<ItemDetail item={productos}></ItemDetail>}
         
         
         </>

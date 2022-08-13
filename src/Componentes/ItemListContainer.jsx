@@ -3,7 +3,8 @@ import Itemlist from "./ItemList";
 import { useParams } from 'react-router-dom';
 import { db } from '../firebase/firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore'
-import { CSpinner } from '@coreui/react'
+import GridLoader from "react-spinners/ClipLoader";
+
 
 const ItemListContainer = (prop) => {
 
@@ -43,12 +44,10 @@ const ItemListContainer = (prop) => {
         </h2>
 
       </div>
-      <div className="flex flex-row flex-wrap justify-between gap-5">
+      <div className="grid grid-cols-1 gap-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {loading ?
-          <div  className="block m-auto">
-            <CSpinner color="warning"/>
-          </div>
-          : <Itemlist key={Itemlist.id} productos={productos} />}
+        <GridLoader  className="mx-auto" color={ '#D0021B' } loading={loading} size={150} />
+         : <Itemlist key={Itemlist.id} productos={productos} />}
       </div>
 
     </section>
@@ -57,10 +56,5 @@ const ItemListContainer = (prop) => {
 
 export default ItemListContainer
 
-{/* <>
-  
-{loading ? <p>cargando...</p> : <Itemlist productos={productos} />}
 
-
-</> */}
 
